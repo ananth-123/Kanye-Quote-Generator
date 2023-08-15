@@ -1,0 +1,34 @@
+body {
+  background-color: #241109;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbarHead {
+  color: #ae6e1f;
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+a {
+  color: #ae6e1f;
+  text-decoration: none;
+  align-items: center;
+}
+
+#titleName {
+  margin-right: auto;
+}
+
+p {
+  color: #dfa417;
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
