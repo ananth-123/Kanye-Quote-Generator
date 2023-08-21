@@ -1,6 +1,20 @@
 body {
-  background-color: #241109;
+  background-color: #514530;
   font-family: "Bricolage Grotesque", sans-serif;
+}
+
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+}
+
+h3{
+  color: #dfa417;
 }
 
 .navbarHead {
@@ -22,13 +36,110 @@ a {
   margin-right: auto;
 }
 
-p {
+span {
+  margin-left: 0.5rem;
   color: #dfa417;
 }
 
+#githubLink {
+  font-size: 20px;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin-top: 2.75px;
+  background-color: #3a2621;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  height: 35px;
+  width: 175px;
+}
+
 .quote {
+  max-width: 100%;
+  text-align: center;
+}
+
+.generateButton {
+  background-color: #141414;
+  border: 1px solid rgba(54, 54, 54, 0.6);
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagekanye {
+  max-width: 100%;
+  margin-right: 0.5rem;
+}
+
+.generateButton {
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+
+.arrow,
+.arrow:before {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  width: 90px;
+  height: 90px;
+  top: 65%;
+  margin: -50px 0 0 -50px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #dfa417 solid;
+  border-bottom: 2px #dfa417 solid;
+}
+
+
+.arrow:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #dfa417 solid;
+  border-bottom: 1px #dfa417 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
 }
