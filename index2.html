@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YeQuotes Generator</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav {
+        background-color: #555;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #quote-display {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      #image-display {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .kanye-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      #generate-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>YeQuotes Generator</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">GitHub</a>
+    </nav>
+
+    <div class="container">
+      <div id="quote-display">
+        <!-- Quote will be displayed here -->
+        <p>Your Kanye Quote Goes Here</p>
+      </div>
+
+      <div id="image-display">
+        <!-- Kanye images will be displayed here -->
+        <img src="kanye1.jpg" alt="Kanye 1" class="kanye-image" />
+        <img src="kanye2.jpg" alt="Kanye 2" class="kanye-image" />
+        <img src="kanye3.jpg" alt="Kanye 3" class="kanye-image" />
+        <img src="kanye4.jpg" alt="Kanye 4" class="kanye-image" />
+        <img src="kanye5.jpg" alt="Kanye 5" class="kanye-image" />
+      </div>
+
+      <button id="generate-btn">Generate Quote</button>
+    </div>
+
+    <footer>
+      <a href="#">View on GitHub</a>
+    </footer>
+  </body>
+</html>

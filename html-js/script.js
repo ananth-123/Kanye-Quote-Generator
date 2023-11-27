@@ -1,25 +1,22 @@
-
-const container = document.querySelector('.container');
-const contentContainer = document.querySelector('.content-container');
-const generateButton = document.querySelector('.generateButton');
-const buttonContainer = document.querySelector('.button-container');
-
+const container = document.querySelector(".container");
+const contentContainer = document.querySelector(".content-container");
+const generateButton = document.querySelector(".generateButton");
+const buttonContainer = document.querySelector(".button-container");
 
 function generateButtonClicked() {
   getImage();
   getQuote();
-  removeArrowBox();
+  removeArrowBox(); 
 }
-
 
 function getImage() {
   console.log("image");
   let images = [
-    "./images/Kw1.png",
-    "./images/Kw2.png",
-    "./images/Kw3.png",
-    "./images/Kw4.png",
-    "./images/Kw5.png",
+    "../images/Kw1.png",
+    "../images/Kw2.png",
+    "../images/Kw3.png",
+    "../images/Kw4.png",
+    "../images/Kw5.png",
   ];
   const randomImage = Math.floor(Math.random() * images.length);
 
@@ -29,8 +26,6 @@ function getImage() {
   image.src = images[randomImage];
   imagesize.style.maxWidth = "500px";
   image.alt = "Kanye West";
-
- 
 }
 
 const button = document.querySelector("button");
@@ -46,7 +41,7 @@ async function getQuote() {
   const quoteText = document.querySelector(".quote");
   let substring = ["I feel like me and Taylor", "eyes and explode", "marry a"];
   for (let i = 0; i < substring.length; i++)
-    if (!(quote.quote.includes(substring))) {
+    if (!quote.quote.includes(substring)) {
       if (quoteText !== null) {
         quoteText.textContent = quote.quote;
       } else {
