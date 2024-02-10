@@ -1,14 +1,14 @@
 // import { useState } from "react";
-
-import { Button } from "./components/ui/button";
+import Navbar from "./components/Navbar";
+import QuoteBox from "./components/QuoteBox";
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <div>
-      HELLO
-      <Button>Click me</Button>
+      <Navbar />
+      <QuoteBox />
     </div>
   );
 }
