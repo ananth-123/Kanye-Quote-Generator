@@ -6,8 +6,8 @@ function App() {
   // const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <Navbar />
+    <div className="bg-slate-100 h-screen">
+      {/* <Navbar /> */}
       <QuoteBox />
     </div>
   );
